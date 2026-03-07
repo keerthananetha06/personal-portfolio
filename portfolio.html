@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #home {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+        }
+
+        #about {
+            background: #f4f4f4;
+        }
+
+        #skills {
+            background: #eaeaea;
+        }
+
+        #contact {
+            background: #222;
+            color: white;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h1>Keerthana Netha</h1>
+        <p>2nd Year Computer Science Engineering Student</p>
+        <br>
+        <button onclick="welcome()">View Portfolio</button>
+    </section>
+
+    <section id="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>
+                Passionate about frontend development and building interactive,
+                user-friendly web applications using modern technologies.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="card skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourmail@gmail.com</p>
+    </section>
+
+    <script>
+        function welcome() {
+            alert("Welcome to my portfolio website!");
+        }
+    </script>
+
+</body>
+</html>
